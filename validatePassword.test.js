@@ -1,7 +1,7 @@
 const validatePassword = require('./validatePassword')
 
 test("returns false for empty password", () => {
-  expect(validatePassword("")).toBe(false)
+  expect(validatePassword("1234654kujkjhkjh")).toBe(false)
 })
 test("returns false for password without numbers", () => {
   expect(validatePassword("aksjgkaasdf")).toBe(false)
